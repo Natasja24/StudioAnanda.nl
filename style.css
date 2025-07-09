@@ -1,0 +1,598 @@
+
+body, html {
+  margin: 0;
+  padding:0 ;
+  overflow-x: hidden;
+  width: 100%;
+  height: 100%;
+  background-color: #FFEDDB;
+  font-family: sans-serif;
+  scroll-behavior: smooth;
+}
+
+.menu  {
+  background-color: #FFEDDB;
+  padding: 20px 0;
+  display: flex;
+  list-style: none;
+  justify-content: center; /* midden horizontaal */
+}
+
+.menu ul {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li a {
+  text-decoration: none;
+  display: inline;
+  color: #BF9270;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 8px ;
+}
+
+.menu li a:hover {
+  color: #E3B7A0;
+  text-decoration: underline;
+}
+.viewBox {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow:hidden;
+}
+.viewBox img {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.viewBox h6{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+.logo img {
+  position:fixed;
+  left: 0;
+  width: 0;
+  height: 99px; /* of elke gewenste hoogte */
+  align-items: center; /* verticaal centreren */
+  justify-content: center; /* horizontaal centreren */
+  justify-content: left; /* horizontaal centreren */  
+}
+
+  
+.content{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 0fr 0fr;
+  gap: 0px;
+}
+.content .rond-beeld {
+  width: 50%; /* of elke gewenste breedte */
+  height: 50%;
+  object-fit: cover;
+  border-radius: 20%;
+  border: 4px solid #BF9270; /* optioneel: mooie rand in je huisstijl */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* optionele zachte schaduw */
+  text-align: left;
+  transform: rotate(-7deg);
+}
+.blok-container {
+  display: flex;
+  justify-content: space-between; /* ruimte tussen de blokken */
+  gap: 20px; /* ruimte tussen blokken */
+  padding: 20px;
+  flex-wrap: wrap; /* op mobiel onder elkaar */
+}
+
+.blok {
+  flex: 1; /* even breed verdeeld */
+  min-width: 250px; /* voor responsiviteit */
+  background-color: #FFEDDB;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+
+.wave-divider {
+  width: 100%;
+  margin: 60px 0;
+}
+.wave-divider svg {
+  width: 100%;
+  height: 60px;
+}
+.welkom{
+  display:flex;
+  align-items: center; /* verticaal uitlijnen */
+  gap: 20px; /* ruimte tussen afbeelding en tekst */
+  padding: 20px;
+  flex-wrap: wrap; /* mobielvriendelijk */
+  text-align:justify;
+  max-width: 600px;
+}
+
+
+h2 {
+  text-align: center;
+  font-size: 6vh;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.content h4 {
+  text-align: center;
+  margin-top: 0%;
+  align-items: initial;
+  
+}
+.content-blok p  {
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  top: 0%;
+  display:flex;
+  align-items:center; /* verticaal uitlijnen */
+  gap: 20px; /* ruimte tussen afbeelding en tekst */
+  padding: 20px;
+  flex-wrap: wrap; /* mobielvriendelijk */
+  text-align: center;
+  
+}
+
+.sector .sector2 {
+   width: 1400px;
+  height: 600px;
+  margin: 0;
+  
+}
+
+section {
+  margin-bottom: 100px;
+}
+.hero img {
+  width: 100%;
+  height: 100vh; /* of elke gewenste hoogte */
+  position: relative;
+}
+.hero1 img{
+  position:relative;
+  display: inline-block; /* of block als het hele breedte moet zijn */
+  width: 100%; /* of elke gewenste breedte */
+  height: 99vh; /* of elke gewenste hoogte */
+  overflow: hidden;
+}
+
+
+
+.hero2 img {
+  width: 100%; /* of elke gewenste breedte */
+  height: 100vh; /* of elke gewenste hoogte */
+  display: inline-block;
+  position: relative;
+}
+.rijk {
+  display: flex;
+  align-items: center; /* verticaal uitlijnen */
+  gap: 20px; /* ruimte tussen afbeelding en tekst */
+  padding: 20px;
+  flex-wrap: wrap; /* mobielvriendelijk */
+  text-align: center;
+  max-width: 600px;
+}
+.rijk img {
+  width: 30%;
+  height: auto;
+  border-radius: 20px; /* optioneel: afgeronde hoeken */
+  box-shadow: 0 4px 10px gba(0,0,0,3.1); /* optionele zachte schaduw */
+}
+.rick {
+   flex: 2 1 300px;
+  height: 100%;
+  padding: 20px;
+  text-align: left;
+  border-radius: 10%;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* optionele zachte schaduw */
+}
+
+.title {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white; /* of een kleur die opvalt */
+  font-size: 5rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4); /* leesbaarheid verbeteren */
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .three-boxes {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .box {
+    width: 90%;
+  }
+}
+
+
+.deel1 h1{
+  text-align: center;
+}
+.three-boxes {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px 20px;
+  background-color: #EDCDBB; /* zwart als voorbeeld */
+  flex-wrap: wrap;
+}
+
+.box {
+  background-color: #1a1a1a;
+  color: white;
+  text-align: center;
+  border-radius: 8px;
+  overflow: hidden;
+  max-width: 300px;
+  transition: transform 0.3s ease;
+}
+
+.box:hover {
+  transform: scale(1.03);
+}
+
+.box img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.box h3 {
+  font-size: 18px;
+  margin: 10px 0 5px;
+}
+
+.box p {
+  font-size: 14px;
+  color: #ccc;
+  margin-bottom: 15px;
+}
+
+
+
+  .background { 
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 500%;
+  background: linear-gradient(to right, #EDCDBB, #E3B7A0, #BF9270);
+  z-index: 0;
+}
+.walker {
+  position:fixed;
+  bottom: 0;
+  width: 200px;
+  height: 400px;
+  background: url('loop_sprite.png') left center;
+  background-repeat: no-repeat;
+  background-size: 600px 300px;
+  animation: walk 1s steps(3) infinite, move 8s linear infinite;
+  z-index: 1;
+}
+.moving-line {
+  height: 3px;
+  background: linear-gradient(90deg, #FFEDDB, #EDCDBB, #E3B7A0, #BF9270);
+  background-size: 400% 100%;
+  animation: moveLine 5s linear infinite;
+}
+.watikdoe {
+  display:flex;
+  align-items: center; /* verticaal uitlijnen */
+  gap: 20px; /* ruimte tussen afbeelding en tekst */
+  padding: 20px;
+  flex-wrap: wrap; /* mobielvriendelijk */
+  text-align:justify;
+  max-width: 600px;
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  gap: 20px;
+  background-color: #EDCDBB;
+  color: #333;
+  padding: 10px;
+  flex-wrap: wrap; /* mobielvriendelijk */
+}
+
+.footer-blok {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer h4 {
+  margin-bottom: 15px;
+  color: #BF9270;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #EDCDBB;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+.copyright {
+  justify-items: center;
+  font-size: 14px;
+  color: #777;
+  padding: 20px;
+  background-color:#EDCDBB; /* of jouw favoriete kleur */
+}
+.beer {
+  background-color: #EDCDBB; /* jouw gewenste strookkleur */
+  padding: 40px; /* ruimte boven/onder/naast de foto */
+  text-align: center; /* centreren van de foto */
+}
+
+.beer img {
+  max-width: 300px; /* pas dit aan naar jouw wens */
+  border-radius: 10px; /* optioneel: afgeronde hoeken */
+  width: auto;
+}
+
+
+.aapje h5 {
+  font-size: 2rem;
+}
+.panda img{
+  height: 200px;
+  width: auto;
+}
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-blok {
+    margin-bottom: 30px;
+  }
+}
+
+
+
+@keyframes moveLine {
+  0% { background-position: 0% 0; }
+  100% { background-position: 100% 0; }
+}
+
+
+
+@keyframes walk {
+  from { background-position-x: 0; }
+  to { background-position-x: -600px; }
+}
+
+@keyframes move {
+  0% { left: -200px; }
+  100% { left: 100%; }
+}
+@media (max-width: 768px) {
+  .content-blok {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+.pagina2 h1 {
+  color:aliceblue;
+  font-size: 6rem;
+}
+.draakje {
+  text-align: center;
+  font-size: 3rem;
+}
+.draakje p {
+  text-align: center;
+  font-size:medium;
+}
+.leeuw {
+   text-align: center;
+   
+
+}
+.freek {
+  text-align: center;
+  color: black;
+  font-size: 40px;
+}
+.sjaak {
+  text-align: center;
+  font-size: 20px;
+}
+
+
+
+
+
+.uit2 img{
+width: 100%;
+  height: 80vh; /* of elke gewenste hoogte */
+  position: relative;
+}
+
+
+
+
+
+.project-info {
+  flex: 2 1 300px;
+  height: 100%;
+  padding: 20px;
+  text-align: center;
+
+}
+
+.project-info h3 {
+  margin-top: 0;
+  font-size: 24px;
+  color: #BF9270;
+}
+
+.project-info p {
+  color: #4d3347;
+  margin-bottom: 10px;
+}
+
+.project-info a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #BF9270;
+  color: #4d3347;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+
+.project-info a:hover {
+  background-color: #A67855;
+}
+
+.deel3 {
+  text-align: center;
+}
+.deel3 img {
+  width: 100%;
+  height: 50vh;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+.ik {
+  text-align: center;
+  padding: 20px;
+  background-color: #FFEDDB; /* of jouw gewenste kleur */
+}
+.footer {
+  background-color: #EDCDBB; /* of jouw gewenste kleur */
+  color: #333;
+  padding: 20px;
+  text-align: center;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #FFEDDb;
+  color:#4d3347;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
+  background:#FFEDDb;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1100px;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.hero-text {
+  flex: 1;
+  padding: 20px;
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+}
+
+.hero-text span {
+  color: #ff4081;
+  font-weight: bold;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  background: #ff4081;
+  padding: 10px 20px;
+  color:#4d3347 ;
+  text-decoration: none;
+  border-radius: 6px;
+}
+
+.hero-img img {
+  max-width: 500px;
+  border-radius: 100%;
+}
+
+.about, .portfolio {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.skills {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.skill {
+  background: pink;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+.portfolio-grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.project-card {
+  background: pink;
+  border-radius: 10px;
+  padding: 20px;
+  width: 300px;
+}
+
+.project-card img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+footer {
+  background: #EDCDBB;
+  padding: 20px;
+  text-align: center;
+  font-size: 0.9rem;
+}
+.website-links {
+ background: pink;
+  padding: 10px 20px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+}
